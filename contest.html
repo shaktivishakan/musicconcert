@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Oswald:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background: url(./concerthome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-color: black;
+}
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .mid {
+    display: block;
+    width: 55%;
+    margin: 25px auto;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    }
+    .navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar li a{
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+    padding: 34px 20px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: rgb(240, 207, 207);
+}
+.btn{
+    margin: 25px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(46, 40, 40);
+}
+.left img{
+    width: 100px;
+}
+.left div{
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+}
+.name{
+    margin-top: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(142, 115, 18);
+    border-radius: 28px;
+    font-size: 2.7em;
+}
+.name , .namepara{
+    text-align: center;
+    color: rgb(233, 3, 64);
+}
+.homeimage img{
+    height: auto;
+    width: 100%;
+}
+#singers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.singer{
+    width: 25%;
+    margin: 10px 2.5%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgb(227, 71, 71);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.singer img{
+    width: 300px;
+    height: 500px;
+}
+
+.singer p{
+    color: rgb(233, 188, 10);
+    font-size: 20px;
+}
+
+.centered-h4 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(131, 247, 139);
+}
+.h3 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(131, 247, 139);
+}
+.registration {
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    width: 50%; /* Adjust the width as needed */
+}
+
+.registration form {
+    text-align: center; /* Reset text alignment inside the form */
+}
+
+.registration .form-group {
+    margin-bottom: 20px;
+}
+
+.registration input {
+    width: 80%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid rgb(247, 16, 16);
+    border-radius: 10px;
+}
+
+.registration .btn {
+    background-color: rgb(207, 80, 80);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#guests{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(131, 247, 139);
+}
+#chiefguest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cguest{
+    width: 25%;
+    margin: 10px 2.5%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgb(227, 71, 71);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cguest img{
+    width: 300px;
+    height: 400px;
+}
+
+.cguest p{
+    color: rgb(233, 188, 10);
+    font-size: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+</style>
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="./musiclogo.png" alt="">
+            <div>My<br>Concert</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#registration">Ticket Registration</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="home">
+        <div class="name">
+            <p class="namepara">
+            <strong>Welcome To MyConcert!</strong> <br> The musical festival is on October 15th of this year.
+            <br> We Welcome you to witness the greatness of music in our Chennai. <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, consequatur.
+            </p>
+        </div>
+    </div>
+    <h4 class="centered-h4">
+        Singers
+    </h4>
+    <div id="singers">
+        <div class="singer">
+            <img src="./anirudh.jpg" alt="">
+            <p><strong>Anirudh</strong><br> is here to insert the vibe in us. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, impedit!
+            </p>
+        </div>
+        <div class="singer">
+            <img src="./dualipa.jpg" alt="">
+            <p><strong>Dua lupa</strong><br> is ready to levitate us. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores rerum iure provident!</p>
+        </div>
+        <div class="singer">
+            <img src="./xxxten.jpg" alt="">
+            <p><strong>xxxTentacion</strong><br> is down from hell to entertain us. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi.
+            </p>
+        </div>
+    </div>
+    <h4 id="guests">Chief Guest</h4>
+    <div id="chiefguest">
+        <div class="cguest">
+            <img src="./ronaldo.jpg" alt="">
+            <p>The <strong>GOAT</strong> is here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis atque iste?</p>
+        </div>
+        <div class="cguest">
+            <img src="./dhoni.jpg" alt="">
+            <p>Captain Cool <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, cum.</p>
+        </div>
+    </div>
+    <h3 id="registration" class="h3">Register Now</h3>
+    <div class="registration">
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
